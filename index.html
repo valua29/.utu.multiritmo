@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Multiritmo</title>
+    <link rel="shortcut icon" href="iconoPNG.png" type="image/png">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale-1.0">
+    <meta name="description" content="bienvenidos al gran festival">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            
+      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light rounded px-3">
+        <div class="container-fluid">
+          
+          <!-- Título o marca del menú -->
+          <a class="navbar-brand fw-bold" href="#">
+            <img src="multi_ridmo.png" class="object-fit-cover" alt="Descripción de la imagen" width="80">
+          </a>
+
+          <!-- Botón Hamburguesa (se muestra solo en pantallas pequeñas) -->
+          <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#menuResponsive" 
+            aria-controls="menuResponsive" 
+            aria-expanded="false" 
+            aria-label="Alternar navegación">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Contenido del menú que se colapsa -->
+          <div class="collapse navbar-collapse" id="menuResponsive">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> El festival </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Experiencias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Culturas</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="container bg-white p-4 shadow-sm rounded">
+    <div class="row align-items-center g-4">
+      
+      <!-- Columna 1: Contenido o información -->
+      <div class="col-12 col-md-5">
+        <span class="badge bg-primary mb-2">Destacado</span>
+        <h2 class="fw-bold">Festival Multicultural </h2>
+        <p class="text-secondary">
+          Un encuentro donde  culturas,sabores,musica y tradiciones se unen para celebrar y compartir nuestra divercidad  
+        </p>
+        <button class="btn btn-outline-primary">Saber más</button>
+      </div>
+
+      <!-- Columna 2: Carrusel Autoplay -->
+      <div class="col-12 col-md-7">
+        
+        <!-- Contenedor del Carrusel -->
+        <!-- data-bs-ride="carousel" activa el desplazamiento automático -->
+        <!-- data-bs-interval="3000" define el tiempo de cambio (3 segundos) -->
+        <div id="carruselGaleria" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          
+          <!-- Indicadores (Círculos) -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carruselGaleria" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carruselGaleria" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carruselGaleria" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <!-- Diapositivas / Imágenes -->
+          <div class="carousel-inner rounded overflow-hidden">
+            
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <img src="medium-shot-friends-having-fun-together.jpg" class="d-block w-100 object-fit-cover" style="height: 380px;" alt="Paisaje de montaña">
+              <div class="carousel-caption d-none d-sm-block">
+                <div class="custom-caption">
+                  <h5 class="fw-bold m-0">Restauración de espacios</h5>
+                  <p class="small m-0 text-white-50">Descubre detalles increíbles</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <img src="medium-shot-friends-with-map.jpg" class="d-block w-100 object-fit-cover" style="height: 380px;" alt="Bosque con niebla">
+              <div class="carousel-caption d-none d-sm-block">
+                <div class="custom-caption">
+                  <h5 class="fw-bold m-0">Nuestra mejor presentación</h5>
+                  <p class="small m-0 text-white-100">Descubre el diseño y el buen gusto en cada taza</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <img src="side-view-smiling-young-woman-gesturing-peace-sign.jpg" class="d-block w-100 object-fit-cover" style="height: 380px;" alt="Camino en el bosque">
+              <div class="carousel-caption d-none d-sm-block">
+                <div class="custom-caption">
+                  <h5 class="fw-bold m-0" style="color: black;">La mejor especialización</h5>
+                  <p class="small m-0" style="color: black;">Nuestro equipo trabaja para darte las mejores opciones</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Flechas de navegación (Anterior / Siguiente) -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carruselGaleria" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carruselGaleria" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
