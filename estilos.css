@@ -21,3 +21,80 @@
   color: #FFFFFF;
     transform: scale(1.1);
 }
+ /* Estilos personalizados para la línea de tiempo (Timeline) */
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        /* Línea vertical central/lateral */
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 20px;
+            height: 100%;
+            width: 4px;
+            background: #e9ecef;
+            border-radius: 2px;
+        }
+
+        @media (min-width: 768px) {
+            .timeline::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        /* Marcador/Círculo en la línea */
+        .timeline-badge {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #0d6efd;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            z-index: 1;
+            box-shadow: 0 0 0 4px #fff, 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        @media (min-width: 768px) {
+            .timeline-badge {
+                left: 50%;
+            }
+        }
+
+        /* Contenido de la tarjeta */
+        .timeline-panel {
+            position: relative;
+            width: calc(100% - 60px);
+            margin-left: 60px;
+        }
+
+        @media (min-width: 768px) {
+            .timeline-panel {
+                width: 45%;
+                margin-left: 0;
+            }
+
+            .timeline-item:nth-child(even) .timeline-panel {
+                margin-left: auto;
+            }
+        }
+
+        .timeline-img {
+            height: 200px;
+            object-fit: cover;
+        }
