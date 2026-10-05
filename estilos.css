@@ -3,8 +3,8 @@
   position: fixed;
   bottom: 25px;
   right: 25px;
-  width: 60px;
-  height: 60px;
+  width: 60px !important;
+  height: 60px !important;
   background-color: #25D366;
   color: #FFFFFF;
   border-radius: 50%;
